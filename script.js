@@ -102,7 +102,9 @@ function generatePassword() {
     var generatePasswordFinal = password.join("");
     UserInput(generatePasswordFinal);
     return generatePasswordFinal;
+    
 }
+
 
 //Used to create uppercase letters
 var toUpper = function (x) {
@@ -114,14 +116,20 @@ alpha2 = alpha.map(toUpper);
 //A button used to generate the password
 var generateBtn = document.querySelector("#generate");
 
-generateBtn.addEventListener("click", function () {
-    generatePasswordFinal = generatePassword();
-    document.getElementById("password").placeholder = generatePasswordFinal;
-});
+// Write password to the #password input
+function writePassword() {
+    var passwordFinal = generatePassword();
+    var passwordText = document.querySelector("#password");
+  
+    passwordText.value = passwordFinal;
+}
+  
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 
 //Puts the password into the textbox
 function UserInput(generatePasswordFinal) {
-    document.getElementById("password").textContent = generatePasswordFinal;
+   document.getElementById("password").textContent = generatePasswordFinal;
 
 }
