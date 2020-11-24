@@ -33,4 +33,4 @@
 
 <img src = "https://user-images.githubusercontent.com/70537665/99853729-62c25d00-2b38-11eb-9381-e37bcc9c08be.png" width = "1000px" height = "500px">
 
-<a href = "https://al0harussia.github.io/Password-Generator/">Link to website</a>
+<a href = "https://al0harussia.github.io/Password-Generator-Multi-Criteria/">Link to website</a>
